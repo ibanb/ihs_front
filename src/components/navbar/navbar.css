@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: rgb(75, 74, 74);
     width: 100%;
+    border-bottom: aqua solid 1px;
   }
   .navbar__header {
     margin-left: 10px;

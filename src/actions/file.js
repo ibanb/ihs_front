@@ -129,7 +129,7 @@ export function deleteFile(file) {
                 }
             })
             dispatch(deleteFileAction(file._id))
-            alert(response.data.message)
+            // alert(response.data.message)
         } catch (e) {
             alert(e?.response?.data?.message)
         }

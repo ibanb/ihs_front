@@ -54,6 +54,21 @@ const Disk = () => {
         setDragEnter(false)
     }
 
+    // WE ARE HERE
+    async function getDescriptors(e) {
+    
+        const response = await fetch(`http://localhost:5000/api/files/descriptors`,{
+        headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+        }
+
+        
+    })
+    console.log(await response);
+    }
+
+
+
     if(loader) {
         return (
             <div className='loader'>
@@ -68,6 +83,7 @@ const Disk = () => {
             <div className="disk__btns">
                 <button className="disk__back" onClick={() => backClickHandler()}>Назад</button>
                 <button className="disk__create" onClick={() => showPopupHandler()}>Создать папку</button>
+                <button onClick={(e) => getDescriptors()}>+</button>
                 <div className="disk__upload">
                     <label htmlFor='disk__upload-input' className="disk__upload-label">Загрузить файл</label>
                     <input multiple={true} onChange={(event) => fileUploadHandler(event)} type="file" id='disk__upload-input' className="disk__upload-input" />

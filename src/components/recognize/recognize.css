@@ -1,0 +1,80 @@
+.recognition {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+  
+  video {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+    /* border-radius: 30px; */
+    border: aqua solid 1px;
+  }
+  
+
+.camera {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 50%; */
+  /* position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.4s; */
+}
+
+.result.hasFoto {
+  /* left: 0; */
+}
+
+/* .send {
+  width: 100%;
+  margin: 0;
+} */
+
+.recognize__button_snap {
+  width: 50%;
+  font-weight: 700;
+  font-size: 24px;
+  /* position: absolute; */
+  bottom: 20px;
+  left: 40px;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 8px, 16px;
+  background-image: linear-gradient(to right, #844fff 50%, #ff4f84 50%);
+  background-position: 0%;
+  background-size: 200%;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.recognize__button_snap:hover {
+  background-position: 100%;
+}
+
+.rec-images {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+ 

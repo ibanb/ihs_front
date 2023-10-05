@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { auth } from '../actions/user';
 import Disk from './disk/Disk.jsx';
 import Profile from './profile/Profile';
+import Recognition from './recognize/Recognize';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
                   <Routes>
                     <Route path="/registration" element={<Registration />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/recognition" element={<Recognition />} />
                     <Route
                       path="*"
                       element={<Navigate to="/login" />}
