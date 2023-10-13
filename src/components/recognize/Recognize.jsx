@@ -82,7 +82,7 @@ const Recognition = () => {
         
         
         const response = await axios.post(`http://localhost:5000/api/files/selfy`, formData, {
-                headers: {Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWNmMDM3YTE5MTVmYmIzMjMxY2M3YyIsImlhdCI6MTY5NjUwNjM2NywiZXhwIjoxNjk2NTA5OTY3fQ.NrkEM-F8lFKWOVKS1qaUsEwG7XzZ6xJym44jfwyCfaI`},
+                headers: {Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MjU5M2M1N2U5NTY0M2ZmYzBjZTU3MiIsImlhdCI6MTY5Njk2MjQxMCwiZXhwIjoxNjk2OTk4NDEwfQ.Z5s1MAygtg2zjW1etiVqv3MrJRc2CTfbEPo-gWBcfRs`},
         })
 
         
